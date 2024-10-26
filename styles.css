@@ -3,3 +3,22 @@ body{
     margin: 0;
     padding: 0;
 }
+
+img{
+    width: 40px;
+}
+
+header{
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.top-half{
+    background-color: red;
+    padding: 10px;
+}
+
+.bottom-half{
+    background-color: antiquewhite;
+    padding: 10px;
+}
