@@ -2,23 +2,59 @@ html,
 body{
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 img{
-    width: 40px;
+    height: 30px;
 }
 
 header{
     background-color: aquamarine;
     padding: 10px;
+    grid-column: 2;
+    grid-row: 1;
 }
 
-.top-half{
-    background-color: red;
-    padding: 10px;
-}
-
-.bottom-half{
+nav{
     background-color: antiquewhite;
-    padding: 10px;
+    grid-row: 1 / -1;
+    grid-column: 1;
+
+    padding: 4%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#nav-dashboard-div,
+#nav-home-div,
+#nav-settings-div{
+    margin-bottom: 10%;
+}
+
+#nav-dashboard-div,
+#nav-home-div > div,
+#nav-settings-div > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main{
+    background-color: blue;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
