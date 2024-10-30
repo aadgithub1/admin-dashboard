@@ -25,6 +25,10 @@ h3{
     font-size: 2rem;
 }
 
+p{
+    font-size: 1.4rem;
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -150,7 +154,7 @@ main{
 }
 
 main #left{
-    padding: 4%;
+    padding: 3rem 4% 4%;
 
     background-color: goldenrod;
     grid-column: 1;
@@ -179,8 +183,36 @@ main #left{
     box-shadow: -8px 0;
 }
 
-
 main #right{
-    background-color: purple;
+    background-color: green;
 }
+
+main #top{
+    min-height: 100%;
+    background-color: purple;
+    padding: 3rem 0 4%;
+}
+
+#announcement-board-div{
+    background-color: white;
+    min-height: 30rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#announcement-board-div > div{
+    padding: 2rem 0 2rem;
+}
+
+#first{
+    border-bottom: 2px solid grey;
+}
+
+main #bottom{
+    background-color: grey;
+}
+
 
