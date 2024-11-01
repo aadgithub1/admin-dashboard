@@ -1,3 +1,9 @@
+
+:root{
+    --system-blue: #2563eb;
+    --system-light-grey: rgb(228, 228, 228);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -39,8 +45,13 @@ img{
     height: 30px;
 }
 
+nav img{
+    filter: brightness(0) invert(1);
+}
+
 nav{
-    background-color: antiquewhite;
+    background-color: var(--system-blue);
+    color: whitesmoke;
     grid-row: 1 / -1;
     grid-column: 1;
 
@@ -54,6 +65,7 @@ nav{
 #nav-home-div,
 #nav-settings-div{
     margin-top: 15%;
+    
 }
 
 #nav-dashboard-div,
@@ -67,11 +79,11 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;;
 }
 
 header{
-    background-color: aquamarine;
+    background-color: white;
     padding: 3%;
     grid-column: 2;
     grid-row: 1;
@@ -104,8 +116,9 @@ header{
 }
 
 input[type="text"]{
+    background-color: var(--system-light-grey);
     border-radius: 20px;
-    border: 1px solid rgb(195, 193, 193);
+    border: none;
     line-height: 1.8;
     width: 80%;
 }
@@ -143,7 +156,8 @@ input[type="text"]{
 }
 
 main{
-    background-color: blue;
+    background-color: var(--system-light-grey);
+
     grid-column: 2;
     grid-row: 2;
 
@@ -152,10 +166,13 @@ main{
     grid-template-rows: 1fr 1fr;
 }
 
+main > div{
+    background-color: transparent;
+}
+
 main #left{
     padding: 3rem 4% 4%;
 
-    background-color: goldenrod;
     grid-column: 1;
     grid-row: 1 / -1;
 
@@ -165,12 +182,11 @@ main #left{
 }
 
 #top-right{
-    background-color: pink;
     padding-top: 3rem;
 }
 
+
 #bottom-right{
-    background-color: aqua;
     grid-column: 2;
     grid-row: 2;
 
@@ -202,11 +218,16 @@ main #left{
     box-shadow: -8px 0;
 }
 
-#announcement-board-div{
+#announcement-board-div,
+#trending{
     background-color: white;
-    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
     border-radius: 8px;
+}
 
+#announcement-board-div{
     display: flex;
     flex-direction: column;
 }
